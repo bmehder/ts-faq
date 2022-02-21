@@ -21,15 +21,17 @@
   </section>
 </div>
 
-<style>
-  .faq section {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-bottom: 2rem;
-  }
-  .faq h2 {
-    font-size: 2rem;
-    line-height: 2em;
+<style lang="scss">
+  .faq {
+    section {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    h2 {
+      font-size: 2rem;
+      line-height: 2em;
+    }
   }
 </style>
