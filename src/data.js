@@ -1,6 +1,6 @@
 export let wound = [
   {
-    question: 'How much does it cost to receive Allographic Wound Care at Restore First Health?',
+    question: 'How much does it cost to receive Allographic Wound Care at Prime Regen?',
     answer:
       '<p>Our advanced wound care utilizing FDA approved allograph techniques is fully covered by Medicare Part B.</p>',
   },
@@ -84,7 +84,7 @@ export let wound = [
       </ul>
 
       <p>
-        Always check with your Restore First Health clinical team for more nutritional information
+        Always check with your Prime Regen clinical team for more nutritional information
         and questions regarding how to enhance healing.
       </p>`,
   },
