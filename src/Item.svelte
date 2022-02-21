@@ -1,9 +1,4 @@
 <script lang="ts">
-  interface Item {
-    question: string
-    answer: string
-  }
-
   import { slide } from 'svelte/transition'
 
   export let item: Item
