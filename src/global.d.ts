@@ -1,6 +1,6 @@
 /// <reference types="svelte" />
 
-type Item = {
+interface Item {
   question: string
   answer: string
 }

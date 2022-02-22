@@ -31,6 +31,9 @@
 </div>
 
 <style lang="scss">
+  $dark: #282568;
+  $light: #efefef;
+
   .faq-item {
     h3 {
       display: flex;
@@ -38,16 +41,16 @@
       align-items: center;
       gap: 1rem;
       padding: 2rem;
-      background: #efefef;
-      color: #282568;
+      background: $light;
+      color: $dark;
       line-height: 1.5rem;
       cursor: pointer;
     }
 
     h3:hover,
     .open h3 {
-      background: #282568;
-      color: #efefef;
+      background: $dark;
+      color: $light;
     }
 
     div {
