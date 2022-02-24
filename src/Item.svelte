@@ -20,8 +20,8 @@
   }
 </script>
 
-<div class="faq-item" class:open={isOpen}>
-  <h3 on:click={handleClick}>
+<div class="faq-item">
+  <h3 class:open={isOpen} on:click={handleClick}>
     <span>{question}</span>
     <i class="fas fa-chevron-down" />
   </h3>
@@ -48,7 +48,7 @@
     }
 
     h3:hover,
-    .open h3 {
+    h3.open {
       background: $dark;
       color: $light;
     }
