@@ -22,16 +22,18 @@
 </div>
 
 <style lang="scss">
+  $size: 2;
+
   .faq {
     section {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
-      margin-bottom: 2rem;
+      gap: $size + rem;
+      margin-bottom: $size + rem;
     }
     h2 {
-      font-size: 2rem;
-      line-height: 2em;
+      font-size: $size + rem;
+      line-height: $size * 1em;
     }
   }
 </style>
