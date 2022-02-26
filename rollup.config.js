@@ -36,7 +36,7 @@ export default {
   output: {
     sourcemap: !production,
     format: 'iife',
-    name: 'faq',
+    name: 'Faq',
     file: 'public/build/faq.js',
   },
   plugins: [
