@@ -8,7 +8,7 @@
 
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="stylesheet" href="/global.css" />
-    <link rel="stylesheet" href="/build/bundle.css" />
+    <link rel="stylesheet" href="/build/faq.css" />
 
     <style>
       #faq {
@@ -17,10 +17,26 @@
       }
     </style>
 
-    <script defer src="/build/bundle.js"></script>
+    <script src="/build/wound.js"></script>
+    <script src="/build/knee-pain.js"></script>
+    <script src="/build/faq.js"></script>
   </head>
 
   <body>
-    <div id="faq"></div>
+    <div id="wound"></div>
+    <script>
+      faq(document.querySelector('#wound'), {
+        title: 'Wound Care',
+        data: wound
+      })
+    </script>
+
+    <div id="knee-pain"></div>
+    <script>
+      faq(document.querySelector('#knee-pain'), {
+        title: 'Knee Pain',
+        data: kneePain
+      })
+    </script>
   </body>
 </html>

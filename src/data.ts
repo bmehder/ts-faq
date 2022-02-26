@@ -1,4 +1,4 @@
-export let wound = [
+export const wound = [
   {
     question: 'How much does it cost to receive Allographic Wound Care at Prime Regen?',
     answer:

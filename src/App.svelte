@@ -1,21 +1,19 @@
 <script lang="ts">
-  import { wound, knee } from './data'
+  // import { wound, knee } from './data'
   import Item from './Item.svelte'
+
+  export let title = ''
+  export let data = []
 
   let selectedItem: number
 </script>
 
 <div class="faq">
-  <h2>Wound Care</h2>
+  {#if title}
+  <h2>{title}</h2>
+  {/if}
   <section>
-    {#each wound as item, index}
-      <Item {item} bind:selectedItem {index} />
-    {/each}
-  </section>
-
-  <h2>Knee Pain</h2>
-  <section>
-    {#each knee as item, index}
+    {#each data as item, index}
       <Item {item} bind:selectedItem {index} />
     {/each}
   </section>

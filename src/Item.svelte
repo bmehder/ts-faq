@@ -66,11 +66,5 @@
     .open i {
       transform: rotate(180deg);
     }
-
-    @media screen and (max-width: 600px) {
-      div {
-        padding: 0 0.5rem;
-      }
-    }
   }
 </style>
