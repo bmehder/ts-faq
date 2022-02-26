@@ -1,7 +1,7 @@
 <script lang="ts">
   import { slide } from 'svelte/transition'
 
-  export let item: Item
+  export let item: QA
   export let index: number
   export let selectedItem: number
 

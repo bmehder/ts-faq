@@ -1,16 +1,15 @@
 <script lang="ts">
-  // import { wound, knee } from './data'
   import Item from './Item.svelte'
 
-  export let title = ''
-  export let data = []
+  export let title: string
+  export let data: QA[]
 
   let selectedItem: number
 </script>
 
 <div class="faq">
   {#if title}
-  <h2>{title}</h2>
+    <h2>{title}</h2>
   {/if}
   <section>
     {#each data as item, index}

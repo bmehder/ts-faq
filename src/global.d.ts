@@ -1,6 +1,6 @@
 /// <reference types="svelte" />
 
-type Item = {
+type QA = {
   question: string
   answer: string
 }
