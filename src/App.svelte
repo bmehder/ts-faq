@@ -3,6 +3,8 @@
 
   export let title: string
   export let data: QA[]
+  export let dark
+  export let light
 
   let selectedItem: number
 </script>
@@ -13,24 +15,22 @@
   {/if}
   <section>
     {#each data as item, index}
-      <Item {item} bind:selectedItem {index} />
+      <Item {item} bind:selectedItem {index} --dark={dark} --light={light} />
     {/each}
   </section>
 </div>
 
 <style lang="scss">
-  $size: 2;
-
   .faq {
     section {
       display: flex;
       flex-direction: column;
-      gap: $size + rem;
-      margin-bottom: $size + rem;
+      gap: 2rem;
+      margin-bottom: 2rem;
     }
     h2 {
-      font-size: $size + rem;
-      line-height: $size * 1em;
+      font-size: 2rem;
+      line-height: 2em;
     }
   }
 </style>

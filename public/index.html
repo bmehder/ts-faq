@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="/build/faq.css" />
 
     <style>
-      #wound, #knee-pain {
+      #wound,
+      #knee-pain {
         max-width: 960px;
         margin: auto;
       }
@@ -27,7 +28,9 @@
     <script>
       Faq(document.querySelector('#wound'), {
         title: 'Wound Care',
-        data: wound
+        data: wound,
+        dark: '#282568',
+        light: '#efefef',
       })
     </script>
 
@@ -35,7 +38,9 @@
     <script>
       Faq(document.querySelector('#knee-pain'), {
         title: 'Knee Pain',
-        data: kneePain
+        data: kneePain,
+        dark: '#282568',
+        light: '#efefef',
       })
     </script>
   </body>

@@ -3,7 +3,7 @@
 
   export let item: QA
   export let index: number
-  export let selectedItem: number
+  export let selectedItem: number = null
 
   const { question, answer } = item
 
@@ -31,9 +31,6 @@
 </div>
 
 <style lang="scss">
-  $dark: #282568;
-  $light: #efefef;
-
   .faq-item {
     h3 {
       display: flex;
@@ -41,16 +38,17 @@
       align-items: center;
       gap: 1rem;
       padding: 2rem;
-      background: $light;
-      color: $dark;
+      background: var(--light);
+      color: var(--dark);
       line-height: 1.5rem;
       cursor: pointer;
+      transition: all 120ms ease;
     }
 
     h3:hover,
     h3.open {
-      background: $dark;
-      color: $light;
+      background: var(--dark);
+      color: var(--light);
     }
 
     div {
