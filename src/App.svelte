@@ -3,8 +3,8 @@
 
   export let title: string
   export let data: QA[]
-  export let dark
-  export let light
+  export let dark: string = '#222'
+  export let light: string = '#eee'
 
   let selectedItem: number
 </script>
